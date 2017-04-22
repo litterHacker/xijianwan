@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>惜剑网站</title>
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation" class="hidden-sm">
+	<div class="container-fluid" class="hidden-lg">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="#">电商专业技术集锦</a>
+	</div>
+	<div>
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="#">java</a></li>
+			<li><a href="#">jsp</a></li>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					javaee
+					<b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="#">servlet</a></li>
+					<li><a href="#">gradle</a></li>
+					<li><a href="#">springmvc</a></li>
+					<li><a href="#">strus</></li>
+					<li><a href="#">hibernate</a></li>
+					<li><a href="#">mybatis</a></li>
+					<li class="divider"></li>
+					<li><a href="#">so many others</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	 <div>
+        <form class="navbar-form navbar-left" role="search" action="http://www.jd.com">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">查询</button>
+        </form>
+    </div>
+	 <ul class="nav navbar-nav navbar-right"> 
+	
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span>
+             <button class="btn btn-link " data-toggle="modal" data-target="#myModal-1"> 
+             注册
+     		 </button>
+             </a></li> 
+           <li><a href="#"><span class="glyphicon glyphicon-user"></span>
+             <button class="btn btn-link " data-toggle="modal" data-target="#myModal-2"> 
+             登陆
+     		 </button>
+             </a></li> 
+        </ul> 
+	</div>
+</nav>
+
+
+<div class="container">
+	<div class="jumbotron">
+		<h1>惜&nbsp;&nbsp;&nbsp;剑</h1>
+		<p>十年磨一剑，一朝出鞘满皇都。</p>
+		<p><a class="btn btn-primary btn-lg" role="button">
+			惜剑博客</a>
+		</p>
+	</div>
+	<form role="form">
+	<div class="form-group">
+		<label for="name">java从入门到精通</label>
+		<input type="text" class="form-control" id="name" 
+			   placeholder="请输入数量">
+			   <div class="btn-group">
+    				<button type="button" class="btn btn-default">+</button>
+    				<button type="button" class="btn btn-default">-</button>
+				</div>
+	</div>
+	<div class="form-group">
+		<label for="name">javaEE开发实战</label>
+		<input type="text" class="form-control" id="name" 
+			   placeholder="请输入数量">
+			    <div class="btn-group">
+    				<button type="button" class="btn btn-default">+</button>
+    				<button type="button" class="btn btn-default">-</button>
+				</div>
+	</div>
+	<div class="form-group">
+		<label for="name">Springmvc+Mybatis企业应用实战</label>
+		<input type="text" class="form-control" id="name" 
+			   placeholder="请输入数量">
+			    <div class="btn-group">
+    				<button type="button" class="btn btn-default">+</button>
+    				<button type="button" class="btn btn-default">-</button>
+				</div>
+	</div>
+	<div class="form-group">
+	 <input class="btn btn-primary" type="submit" value="购买">
+	</div>
+	</form>
+<div class="modal fade" id="myModal-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-body">
+				<form class="form-horizontal" role="form" action="#">
+  <div class="form-group">
+    <label for="firstname" class="col-sm-2 control-label">名字</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="firstname" placeholder="请输入名字" name="name">
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label for="lastname" class="col-sm-2 control-label">密码</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="secondname" placeholder="请输入密码" name="password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="lastname" class="col-sm-2 control-label">性别</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="lastname" placeholder="请确认性别" nam="sex">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="lastname" class="col-sm-2 control-label">电话号码</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="lastname" placeholder="请输入电话号码" name="telnum">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="lastname" class="col-sm-2 control-label">QQ</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="lastname" placeholder="请输入QQ号码" name="QQnum">
+    </div>
+  </div>
+</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary">
+				   注册
+				</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+   </div>
+   <div class="modal fade" id="myModal-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-body">
+				<form class="form-horizontal" role="form" action="#">
+  <div class="form-group">
+    <label for="firstname" class="col-sm-2 control-label">用户名</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="firstname" placeholder="请输入用户名" name="name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="lastname" class="col-sm-2 control-label">密码</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="lastname" placeholder="请输入密码" name="password">
+    </div>
+  </div>
+</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary">
+				  登录
+				</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+   </div>
+</div>
+</body>
+</html>
